@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -378,7 +378,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="37"/>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="37"/>
 </package>
-<package name="1X05-PTH-2.54-KEY" urn="urn:adsk.eagle:footprint:6985233/2" locally_modified="yes" library_version="23" library_locally_modified="yes">
+<package name="1X05-PTH-2.54-KEY" urn="urn:adsk.eagle:footprint:6985233/3" library_version="27" library_locally_modified="yes">
 <pad name="1" x="-5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="2" x="-2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="3" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
@@ -487,7 +487,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <packageinstance name="1X02-PTH-2.54"/>
 </packageinstances>
 </package3d>
-<package3d name="1X05-PTH-2.54-KEY" urn="urn:adsk.eagle:package:6985236/3" locally_modified="yes" type="model" library_version="23" library_locally_modified="yes">
+<package3d name="1X05-PTH-2.54-KEY" urn="urn:adsk.eagle:package:6985236/4" type="model" library_version="27" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="1X05-PTH-2.54-KEY"/>
 </packageinstances>
@@ -898,7 +898,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 </library>
 <library name="stm32nucleo" urn="urn:adsk.eagle:library:6960847">
 <packages>
-<package name="NUCLEO-144-ZIO" urn="urn:adsk.eagle:footprint:6960848/1" library_version="1">
+<package name="NUCLEO-144-ZIO" urn="urn:adsk.eagle:footprint:6960848/1" locally_modified="yes" library_version="1" library_locally_modified="yes">
 <wire x1="-33" y1="66.67" x2="33" y2="66.67" width="0.127" layer="21"/>
 <wire x1="33" y1="66.67" x2="35" y2="64.67" width="0.127" layer="21" curve="-90"/>
 <wire x1="35" y1="64.67" x2="35" y2="-64.67" width="0.127" layer="21"/>
@@ -1077,10 +1077,43 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <text x="-14" y="-63.87" size="1.27" layer="51" font="vector" ratio="15" align="center">USB</text>
 <text x="14" y="63.93" size="1.27" layer="51" font="vector" ratio="15" align="center">ST-LINK</text>
 <text x="0" y="0" size="5" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<hole x="-22.86" y="-37.46" drill="3.2"/>
+<circle x="-22.86" y="-37.46" radius="3" width="0.127" layer="21"/>
+<hole x="22.86" y="-37.46" drill="3.2"/>
+<circle x="22.86" y="-37.46" radius="3" width="0.127" layer="21"/>
+<wire x1="21.0324" y1="28.8544" x2="21.134" y2="28.5242" width="0" layer="49"/>
+<wire x1="24.1312" y1="30.5308" x2="23.8518" y2="30.7594" width="0" layer="49"/>
+<wire x1="-20.32" y1="-35.56" x2="-25.4" y2="-35.56" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="-35.56" x2="-25.4" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="3.81" x2="-25.4" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="5.08" x2="-25.4" y2="26.67" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="26.67" x2="-20.32" y2="26.67" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="26.67" x2="-20.32" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="5.08" x2="-20.32" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="3.81" x2="-20.32" y2="-35.56" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-35.56" x2="25.4" y2="-35.56" width="0.127" layer="21"/>
+<wire x1="25.4" y1="-35.56" x2="25.4" y2="-29.21" width="0.127" layer="21"/>
+<wire x1="25.4" y1="-29.21" x2="25.4" y2="8.89" width="0.127" layer="21"/>
+<wire x1="25.4" y1="8.89" x2="20.32" y2="8.89" width="0.127" layer="21"/>
+<wire x1="20.32" y1="8.89" x2="20.32" y2="-35.56" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="3.81" x2="-20.32" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-20.32" y1="5.08" x2="-25.4" y2="5.08" width="0.127" layer="21"/>
+<wire x1="20.32" y1="8.89" x2="20.32" y2="35.56" width="0.127" layer="21"/>
+<wire x1="20.32" y1="35.56" x2="25.4" y2="35.56" width="0.127" layer="21"/>
+<wire x1="25.4" y1="35.56" x2="25.4" y2="8.89" width="0.127" layer="21"/>
+<text x="0" y="0" size="5" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<hole x="-22.86" y="-37.46" drill="3.2"/>
+<circle x="-22.86" y="-37.46" radius="3" width="0.127" layer="21"/>
+<hole x="22.86" y="-37.46" drill="3.2"/>
+<circle x="22.86" y="-37.46" radius="3" width="0.127" layer="21"/>
+<hole x="24.13" y="37.4954" drill="3.2"/>
+<hole x="-24.13" y="39.33" drill="3.5"/>
+<circle x="-24.13" y="39.33" radius="3" width="0.127" layer="21"/>
+<circle x="24.13" y="37.4954" radius="3" width="0.127" layer="21"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="NUCLEO-144-ZIO" urn="urn:adsk.eagle:package:6960857/1" type="box" library_version="1">
+<package3d name="NUCLEO-144-ZIO" urn="urn:adsk.eagle:package:6960857/1" locally_modified="yes" type="box" library_version="1" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="NUCLEO-144-ZIO"/>
 </packageinstances>
@@ -1553,17 +1586,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13" y="5" size="0.7" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="MODULE1" library="stm32nucleo" library_urn="urn:adsk.eagle:library:6960847" package="NUCLEO-144-ZIO" package3d_urn="urn:adsk.eagle:package:6960857/1" value="NUCLEO-144-ZIO" x="0" y="0" locked="yes" smashed="yes"/>
-<element name="CON15" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X05-PTH-2.54-KEY" package3d_urn="urn:adsk.eagle:package:6985236/3" value="PINHEAD_1X05-2.54-KEY" x="-11" y="-2.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="-11" y="-2.5" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<element name="CON15" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X05-PTH-2.54-KEY" package3d_urn="urn:adsk.eagle:package:6985236/4" value="PINHEAD_1X05-2.54-KEY" x="-7" y="-2.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="-7" y="-2.5" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="CON16" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X05-PTH-2.54-KEY" package3d_urn="urn:adsk.eagle:package:6985236/3" value="PINHEAD_1X05-2.54-KEY" x="-25" y="-2.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="-25" y="-2.5" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-</element>
-<element name="CON17" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X05-PTH-2.54-KEY" package3d_urn="urn:adsk.eagle:package:6985236/3" value="PINHEAD_1X05-2.54-KEY" x="17" y="-2.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="17" y="-2.5" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-</element>
-<element name="CON18" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X05-PTH-2.54-KEY" package3d_urn="urn:adsk.eagle:package:6985236/3" value="PINHEAD_1X05-2.54-KEY" x="3" y="-2.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="3" y="-2.5" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<element name="CON16" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X05-PTH-2.54-KEY" package3d_urn="urn:adsk.eagle:package:6985236/4" value="PINHEAD_1X05-2.54-KEY" x="-21" y="-2.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="-21" y="-2.5" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="C1" library="C_digikey" package="C0603" value="0.1µF" x="15" y="23" smashed="yes" rot="R270">
 <attribute name="DIGIKEY#" value="490-1532-1-ND" x="15" y="23" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1589,15 +1616,15 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="15.9" y="16" size="0.5" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VOLTAGE" value="16V" x="15" y="16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="SJ3" library="usb2can_master_lib" package="RES_0" value="" x="-2" y="27" smashed="yes">
-<attribute name="NAME" x="-2.635" y="28.27" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.635" y="24.46" size="1.27" layer="27"/>
+<element name="SJ3" library="usb2can_master_lib" package="RES_0" value="" x="-2.95" y="27.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="-4.22" y="26.405" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="-0.41" y="26.405" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CON8" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="2X04-PTH-2.54" package3d_urn="urn:adsk.eagle:package:2540393/1" value="PINHEAD_2X04-PLS" x="23" y="30" smashed="yes" rot="MR0">
-<attribute name="NAME" x="19.698" y="30" size="1.27" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<element name="CON8" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="2X04-PTH-2.54" package3d_urn="urn:adsk.eagle:package:2540393/1" value="PINHEAD_2X04-PLS" x="22.85" y="30.09" smashed="yes" rot="MR0">
+<attribute name="NAME" x="19.548" y="30.09" size="1.27" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
-<element name="CON9" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="2X04-PTH-2.54" package3d_urn="urn:adsk.eagle:package:2540393/1" value="PINHEAD_2X04-PLS" x="-23" y="11" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-26.302" y="11" size="1.27" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<element name="CON9" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="2X04-PTH-2.54" package3d_urn="urn:adsk.eagle:package:2540393/1" value="PINHEAD_2X04-PLS" x="-22.85" y="10.8" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-26.152" y="10.8" size="1.27" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="D5" library="Diodes" library_urn="urn:adsk.eagle:library:2473263" package="SOD123W" package3d_urn="urn:adsk.eagle:package:2473270/2" value="PMEG4020" x="-33" y="-96.5" smashed="yes">
 <attribute name="DIGIKEY#" value="1727-5385-2-ND" x="-33" y="-93" size="1.778" layer="27" display="off"/>
@@ -1652,6 +1679,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-33" y="-112.5" size="0.635" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="PACKAGE" value="0805" x="-33" y="-112.5" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="5%" x="-33" y="-112.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="CON10" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X05-PTH-2.54-KEY" package3d_urn="urn:adsk.eagle:package:6985236/4" value="PINHEAD_1X05-2.54-KEY" x="7" y="-2.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="7" y="-5.802" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+</element>
+<element name="CON11" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" package="1X05-PTH-2.54-KEY" package3d_urn="urn:adsk.eagle:package:6985236/4" value="PINHEAD_1X05-2.54-KEY" x="21" y="-2.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="21" y="-5.802" size="1" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 </elements>
 <signals>
@@ -1731,8 +1764,22 @@ design rules under a new name.</description>
 <contactref element="MODULE1" pad="CN8_13"/>
 <contactref element="D6" pad="A"/>
 <contactref element="D4" pad="A"/>
+<contactref element="CON2" pad="6"/>
+<contactref element="CON1" pad="6"/>
+<contactref element="CON3" pad="6"/>
+<contactref element="CON4" pad="6"/>
+<contactref element="CON15" pad="1"/>
+<contactref element="CON16" pad="1"/>
+<contactref element="CON10" pad="1"/>
+<contactref element="CON11" pad="1"/>
+<wire x1="12.08" y1="-2.5" x2="26.08" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-34" y1="-107" x2="12.08" y2="-2.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-34" y1="-93.5" x2="-34" y2="-107" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.604" y1="4.729" x2="-34" y2="-93.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.191" y1="-25.103" x2="-34" y2="-93.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.191" y1="-11.103" x2="-21.191" y2="-25.103" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.92" y1="-2.5" x2="-21.191" y2="-11.103" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.604" y1="4.729" x2="-15.92" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.92" y1="-2.5" x2="-5.45" y2="3.8" width="0" layer="19" extent="1-1"/>
 <wire x1="9" y1="3.9" x2="-0.525" y2="7.2" width="0" layer="19" extent="1-1"/>
 <wire x1="13" y1="3.9" x2="9" y2="3.9" width="0" layer="19" extent="1-1"/>
 <wire x1="12.6" y1="15.365" x2="13" y2="3.9" width="0" layer="19" extent="1-1"/>
@@ -1741,6 +1788,8 @@ design rules under a new name.</description>
 <wire x1="12.6" y1="22.365" x2="15" y2="22.275" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.12" y1="9.53" x2="-13.604" y2="4.729" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.12" y1="12.07" x2="-24.12" y2="9.53" width="0" layer="19" extent="1-1"/>
+<wire x1="21.191" y1="-11.103" x2="13" y2="3.9" width="0" layer="19" extent="1-1"/>
+<wire x1="21.191" y1="-25.103" x2="21.191" y2="-11.103" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="IC1" pad="8"/>
@@ -1800,20 +1849,6 @@ design rules under a new name.</description>
 <wire x1="-0.525" y1="13.45" x2="-0.525" y2="14.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_5V">
-<polygon width="0.2" layer="1" thermals="no">
-<vertex x="-3.425" y="16.7"/>
-<vertex x="-3.425" y="19"/>
-<vertex x="0.375" y="22.8"/>
-<vertex x="0.375" y="24.025"/>
-<vertex x="-3" y="24.025"/>
-<vertex x="-3" y="23.75"/>
-<vertex x="-5.275" y="21.475"/>
-<vertex x="-8.75" y="21.475"/>
-<vertex x="-8.75" y="20.75"/>
-<vertex x="-7.225" y="20.75"/>
-<vertex x="-5.625" y="19.15"/>
-<vertex x="-5.625" y="16.7"/>
-</polygon>
 <contactref element="IC6" pad="3"/>
 <contactref element="IC2" pad="3"/>
 <contactref element="C1" pad="P$1"/>
@@ -1824,8 +1859,8 @@ design rules under a new name.</description>
 <contactref element="D8" pad="C"/>
 <wire x1="-31.6" y1="-101.5" x2="-31.6" y2="-104" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.12" y1="14.61" x2="-31.6" y2="-101.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.15" y1="27" x2="-24.12" y2="14.61" width="0" layer="19" extent="1-1"/>
-<wire x1="12.6" y1="23.635" x2="-1.15" y2="27" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.95" y1="27.89" x2="-24.12" y2="14.61" width="0" layer="19" extent="1-1"/>
+<wire x1="12.6" y1="23.635" x2="-2.95" y2="27.89" width="0" layer="19" extent="1-1"/>
 <wire x1="15" y1="23.725" x2="12.6" y2="23.635" width="0" layer="19" extent="1-1"/>
 <wire x1="15" y1="16.725" x2="15" y2="23.725" width="0" layer="19" extent="1-1"/>
 <wire x1="12.6" y1="16.635" x2="15" y2="16.725" width="0" layer="19" extent="1-1"/>
@@ -1833,52 +1868,10 @@ design rules under a new name.</description>
 <signal name="VDD_3V3">
 <contactref element="IC6" pad="5"/>
 <contactref element="IC2" pad="5"/>
-<wire x1="7.4" y1="24.905" x2="7.4" y2="17.905" width="0" layer="19" extent="1-1"/>
+<wire x1="7.4" y1="17.905" x2="7.4" y2="24.905" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CAN2_STBY">
 <contactref element="IC2" pad="8"/>
-</signal>
-<signal name="CAN_H">
-<contactref element="CON12" pad="2"/>
-<contactref element="CON13" pad="2"/>
-<contactref element="IC6" pad="7"/>
-<contactref element="R40" pad="1"/>
-<contactref element="D21" pad="1"/>
-<contactref element="CON5" pad="2"/>
-<contactref element="CON6" pad="2"/>
-<contactref element="IC2" pad="7"/>
-<contactref element="R2" pad="1"/>
-<contactref element="D2" pad="1"/>
-<wire x1="-5.625" y1="-38.59" x2="-15.625" y2="-38.59" width="0" layer="19" extent="1-1"/>
-<wire x1="4.375" y1="-38.59" x2="-5.625" y2="-38.59" width="0" layer="19" extent="1-1"/>
-<wire x1="14.375" y1="-38.59" x2="4.375" y2="-38.59" width="0" layer="19" extent="1-1"/>
-<wire x1="13.95" y1="6.1" x2="14.375" y2="-38.59" width="0" layer="19" extent="1-1"/>
-<wire x1="9.95" y1="6.1" x2="13.95" y2="6.1" width="0" layer="19" extent="1-1"/>
-<wire x1="7.4" y1="15.365" x2="9.95" y2="6.1" width="0" layer="19" extent="1-1"/>
-<wire x1="7.4" y1="22.365" x2="7.4" y2="15.365" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.5" y1="-35" x2="7.4" y2="22.365" width="0" layer="19" extent="1-1"/>
-<wire x1="17" y1="-35" x2="7.4" y2="22.365" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="CAN_L">
-<contactref element="CON12" pad="3"/>
-<contactref element="CON13" pad="3"/>
-<contactref element="IC6" pad="6"/>
-<contactref element="CON14" pad="1"/>
-<contactref element="D21" pad="2"/>
-<contactref element="CON5" pad="3"/>
-<contactref element="CON6" pad="3"/>
-<contactref element="IC2" pad="6"/>
-<contactref element="CON7" pad="1"/>
-<contactref element="D2" pad="2"/>
-<wire x1="-14.375" y1="-38.59" x2="-11.23" y2="-35" width="0" layer="19" extent="1-1"/>
-<wire x1="-4.375" y1="-38.59" x2="-14.375" y2="-38.59" width="0" layer="19" extent="1-1"/>
-<wire x1="5.625" y1="-38.59" x2="-4.375" y2="-38.59" width="0" layer="19" extent="1-1"/>
-<wire x1="15.625" y1="-38.59" x2="5.625" y2="-38.59" width="0" layer="19" extent="1-1"/>
-<wire x1="9.73" y1="-35" x2="15.625" y2="-38.59" width="0" layer="19" extent="1-1"/>
-<wire x1="8.05" y1="6.1" x2="5.625" y2="-38.59" width="0" layer="19" extent="1-1"/>
-<wire x1="12.05" y1="6.1" x2="8.05" y2="6.1" width="0" layer="19" extent="1-1"/>
-<wire x1="7.4" y1="16.635" x2="8.05" y2="6.1" width="0" layer="19" extent="1-1"/>
-<wire x1="7.4" y1="23.635" x2="7.4" y2="16.635" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GNDD">
 <contactref element="CON12" pad="4"/>
@@ -1909,22 +1902,6 @@ design rules under a new name.</description>
 <contactref element="CON14" pad="2"/>
 <contactref element="R40" pad="2"/>
 <wire x1="15" y1="-35" x2="12.27" y2="-35" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$2">
-<contactref element="MODULE2" pad="IN+@1"/>
-<contactref element="MODULE2" pad="IN+@2"/>
-<contactref element="C11" pad="2"/>
-<contactref element="IC1" pad="2"/>
-<contactref element="C10" pad="2"/>
-<wire x1="-4.75" y1="8.4119" x2="-4.75" y2="6.9" width="0.25" layer="1"/>
-<wire x1="-4.75" y1="6.9" x2="-5.45" y2="6.9" width="0.25" layer="1"/>
-<contactref element="D5" pad="C"/>
-<contactref element="D3" pad="C"/>
-<wire x1="-31.6" y1="-96.5" x2="-31.6" y2="-110" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.936" y1="4.729" x2="-31.6" y2="-96.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-0.396" y1="4.729" x2="-2.936" y2="4.729" width="0" layer="19" extent="1-1"/>
-<wire x1="-4.75" y1="6.9" x2="-2.936" y2="4.729" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.55" y1="6.85" x2="-5.45" y2="6.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="CON7" pad="2"/>
@@ -1969,11 +1946,21 @@ design rules under a new name.</description>
 <wire x1="-3.85" y1="16.7" x2="-4.425" y2="17.275" width="0.2" layer="1"/>
 <wire x1="-1.5507375" y1="16.7" x2="-3.85" y2="16.7" width="0.2" layer="1"/>
 <contactref element="SJ3" pad="1"/>
-<wire x1="-2.936" y1="23.271" x2="-0.396" y2="23.271" width="0" layer="19" extent="1-1"/>
-<wire x1="-5.45" y1="21.1" x2="-2.936" y2="23.271" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.55" y1="21.1" x2="-5.45" y2="21.1" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.85" y1="27" x2="-2.936" y2="23.271" width="0" layer="19" extent="1-1"/>
-<wire x1="-4.425" y1="17.275" x2="-5.45" y2="21.1" width="0" layer="19" extent="1-1"/>
+<polygon width="0.2" layer="1" thermals="no">
+<vertex x="-3.425" y="16.7"/>
+<vertex x="-3.425" y="19"/>
+<vertex x="0.375" y="22.8"/>
+<vertex x="0.375" y="24.025"/>
+<vertex x="-3" y="24.025"/>
+<vertex x="-3" y="23.75"/>
+<vertex x="-5.275" y="21.475"/>
+<vertex x="-8.75" y="21.475"/>
+<vertex x="-8.75" y="20.75"/>
+<vertex x="-7.225" y="20.75"/>
+<vertex x="-5.625" y="19.15"/>
+<vertex x="-5.625" y="16.7"/>
+</polygon>
+<wire x1="-2.936" y1="23.271" x2="-2.95" y2="26.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="CON12" pad="1"/>
@@ -2002,6 +1989,132 @@ design rules under a new name.</description>
 <contactref element="D4" pad="C"/>
 <wire x1="-34.4" y1="-110" x2="-34" y2="-112.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-30" y1="-107" x2="-34.4" y2="-110" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VDD_24V">
+<contactref element="MODULE2" pad="IN+@1"/>
+<contactref element="MODULE2" pad="IN+@2"/>
+<contactref element="C11" pad="2"/>
+<contactref element="IC1" pad="2"/>
+<contactref element="C10" pad="2"/>
+<contactref element="D5" pad="C"/>
+<contactref element="D3" pad="C"/>
+<wire x1="-4.75" y1="8.4119" x2="-4.75" y2="6.9" width="0.25" layer="1"/>
+<wire x1="-4.75" y1="6.9" x2="-5.45" y2="6.9" width="0.25" layer="1"/>
+<wire x1="-31.6" y1="-96.5" x2="-31.6" y2="-110" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.936" y1="4.729" x2="-31.6" y2="-96.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.396" y1="4.729" x2="-2.936" y2="4.729" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.75" y1="6.9" x2="-2.936" y2="4.729" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.55" y1="6.85" x2="-5.45" y2="6.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CAN1_L">
+<contactref element="CON2" pad="2"/>
+<contactref element="CON1" pad="2"/>
+<contactref element="CON5" pad="3"/>
+<contactref element="CON6" pad="3"/>
+<contactref element="IC2" pad="6"/>
+<contactref element="CON7" pad="1"/>
+<contactref element="D2" pad="2"/>
+<contactref element="CON15" pad="3"/>
+<contactref element="CON16" pad="3"/>
+<wire x1="5.625" y1="-38.59" x2="-11.23" y2="-35" width="0" layer="19" extent="1-1"/>
+<wire x1="15.625" y1="-38.59" x2="5.625" y2="-38.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.794" y1="-13.897" x2="-11.23" y2="-35" width="0" layer="19" extent="1-1"/>
+<wire x1="-21" y1="-2.5" x2="-19.794" y2="-13.897" width="0" layer="19" extent="1-1"/>
+<wire x1="-7" y1="-2.5" x2="-21" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="12.05" y1="6.1" x2="-7" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="7.4" y1="16.635" x2="12.05" y2="6.1" width="0" layer="19" extent="1-1"/>
+<wire x1="19.794" y1="-13.897" x2="12.05" y2="6.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CAN1_H">
+<contactref element="CON2" pad="7"/>
+<contactref element="CON1" pad="7"/>
+<contactref element="CON5" pad="2"/>
+<contactref element="CON6" pad="2"/>
+<contactref element="IC2" pad="7"/>
+<contactref element="R2" pad="1"/>
+<contactref element="D2" pad="1"/>
+<contactref element="CON15" pad="4"/>
+<contactref element="CON16" pad="4"/>
+<wire x1="4.375" y1="-38.59" x2="-18.5" y2="-35" width="0" layer="19" extent="1-1"/>
+<wire x1="14.375" y1="-38.59" x2="4.375" y2="-38.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.397" y1="-11.103" x2="-18.5" y2="-35" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.54" y1="-2.5" x2="-18.397" y2="-11.103" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.54" y1="-2.5" x2="-18.397" y2="-11.103" width="0" layer="19" extent="1-1"/>
+<wire x1="7.4" y1="15.365" x2="-9.54" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="13.95" y1="6.1" x2="7.4" y2="15.365" width="0" layer="19" extent="1-1"/>
+<wire x1="18.397" y1="-11.103" x2="13.95" y2="6.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CAN1_SHIELD">
+<contactref element="CON2" pad="5"/>
+<contactref element="CON15" pad="2"/>
+<contactref element="CON16" pad="2"/>
+<wire x1="-4.46" y1="-2.5" x2="-11.412" y2="-13.897" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.46" y1="-2.5" x2="-4.46" y2="-2.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CAN1_VDD">
+<contactref element="CON2" pad="9"/>
+<contactref element="CON1" pad="9"/>
+<contactref element="R3" pad="2"/>
+<contactref element="CON15" pad="5"/>
+<contactref element="CON16" pad="5"/>
+<wire x1="-12.809" y1="-11.103" x2="-32" y2="-99" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.08" y1="-2.5" x2="-12.809" y2="-11.103" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.08" y1="-2.5" x2="-12.08" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="12.809" y1="-11.103" x2="-12.809" y2="-11.103" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CAN2_VDD">
+<contactref element="CON3" pad="9"/>
+<contactref element="R1" pad="2"/>
+<contactref element="CON10" pad="5"/>
+<contactref element="CON11" pad="5"/>
+<wire x1="1.92" y1="-2.5" x2="15.92" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-32" y1="-112.5" x2="1.92" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="12.809" y1="-25.103" x2="-32" y2="-112.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CAN2_L">
+<contactref element="CON3" pad="2"/>
+<contactref element="CON4" pad="2"/>
+<contactref element="CON12" pad="3"/>
+<contactref element="CON13" pad="3"/>
+<contactref element="IC6" pad="6"/>
+<contactref element="CON14" pad="1"/>
+<contactref element="D21" pad="2"/>
+<contactref element="CON10" pad="3"/>
+<contactref element="CON11" pad="3"/>
+<wire x1="7" y1="-2.5" x2="21" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.375" y1="-38.59" x2="7" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.375" y1="-38.59" x2="-14.375" y2="-38.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.794" y1="-27.897" x2="-14.375" y2="-38.59" width="0" layer="19" extent="1-1"/>
+<wire x1="9.73" y1="-35" x2="-4.375" y2="-38.59" width="0" layer="19" extent="1-1"/>
+<wire x1="19.794" y1="-27.897" x2="9.73" y2="-35" width="0" layer="19" extent="1-1"/>
+<wire x1="8.05" y1="6.1" x2="19.794" y2="-27.897" width="0" layer="19" extent="1-1"/>
+<wire x1="7.4" y1="23.635" x2="8.05" y2="6.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CAN2_H">
+<contactref element="CON4" pad="7"/>
+<contactref element="CON3" pad="7"/>
+<contactref element="CON12" pad="2"/>
+<contactref element="CON13" pad="2"/>
+<contactref element="IC6" pad="7"/>
+<contactref element="R40" pad="1"/>
+<contactref element="D21" pad="1"/>
+<contactref element="CON10" pad="4"/>
+<contactref element="CON11" pad="4"/>
+<wire x1="4.46" y1="-2.5" x2="18.46" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.625" y1="-38.59" x2="4.46" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.625" y1="-38.59" x2="-15.625" y2="-38.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-18.397" y1="-25.103" x2="-15.625" y2="-38.59" width="0" layer="19" extent="1-1"/>
+<wire x1="17" y1="-35" x2="-5.625" y2="-38.59" width="0" layer="19" extent="1-1"/>
+<wire x1="18.397" y1="-25.103" x2="17" y2="-35" width="0" layer="19" extent="1-1"/>
+<wire x1="9.95" y1="6.1" x2="18.397" y2="-25.103" width="0" layer="19" extent="1-1"/>
+<wire x1="7.4" y1="22.365" x2="9.95" y2="6.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CAN2_SHIELD">
+<contactref element="CON10" pad="2"/>
+<contactref element="CON11" pad="2"/>
+<contactref element="CON3" pad="5"/>
+<wire x1="9.54" y1="-2.5" x2="23.54" y2="-2.5" width="0" layer="19" extent="1-1"/>
+<wire x1="11.412" y1="-27.897" x2="9.54" y2="-2.5" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
