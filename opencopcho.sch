@@ -5586,6 +5586,7 @@ http://ru.aliexpress.com/item/New-Mini-Converter-Adjustable-DC-DC-Step-down-Powe
 <part name="GND4" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="+P7" library="supply_symbols" deviceset="5V" device=""/>
 <part name="GND30" library="supply_symbols" deviceset="GND" device="" value="GND"/>
+<part name="+P6" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5995,11 +5996,14 @@ Float to enable</text>
 <instance part="GND4" gate="1" x="358.14" y="33.02" smashed="yes">
 <attribute name="VALUE" x="358.14" y="31.75" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="+P7" gate="G$1" x="20.32" y="228.6" smashed="yes">
-<attribute name="VALUE" x="20.32" y="232.156" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+<instance part="+P7" gate="G$1" x="15.24" y="233.68" smashed="yes">
+<attribute name="VALUE" x="15.24" y="237.236" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="GND30" gate="1" x="20.32" y="215.9" smashed="yes">
-<attribute name="VALUE" x="20.32" y="214.63" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+<instance part="GND30" gate="1" x="15.24" y="215.9" smashed="yes">
+<attribute name="VALUE" x="15.24" y="214.63" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="+P6" gate="G$1" x="20.32" y="233.68" smashed="yes">
+<attribute name="VALUE" x="20.32" y="237.236" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -6262,13 +6266,13 @@ Float to enable</text>
 </segment>
 <segment>
 <pinref part="CON19" gate="G$1" pin="11"/>
-<wire x1="25.4" y1="223.52" x2="20.32" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="223.52" x2="20.32" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="223.52" x2="15.24" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="223.52" x2="15.24" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="CON19" gate="G$1" pin="13"/>
-<wire x1="20.32" y1="220.98" x2="25.4" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="220.98" x2="25.4" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="GND30" gate="1" pin="GND"/>
-<wire x1="20.32" y1="218.44" x2="20.32" y2="220.98" width="0.1524" layer="91"/>
-<junction x="20.32" y="220.98"/>
+<wire x1="15.24" y1="218.44" x2="15.24" y2="220.98" width="0.1524" layer="91"/>
+<junction x="15.24" y="220.98"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -6358,9 +6362,9 @@ Float to enable</text>
 </segment>
 <segment>
 <pinref part="CON19" gate="G$1" pin="9"/>
-<wire x1="25.4" y1="226.06" x2="20.32" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="226.06" x2="15.24" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="+P7" gate="G$1" pin="VDD_5V"/>
-<wire x1="20.32" y1="226.06" x2="20.32" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="226.06" x2="15.24" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD_3V3" class="0">
@@ -6376,12 +6380,11 @@ Float to enable</text>
 <pinref part="+P1" gate="G$1" pin="VDD_3V3"/>
 <wire x1="317.5" y1="142.24" x2="317.5" y2="152.4" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="CAN2_STBY" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="STBY"/>
-<wire x1="314.96" y1="149.86" x2="320.04" y2="149.86" width="0.1524" layer="91"/>
-<label x="320.04" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="CON19" gate="G$1" pin="7"/>
+<wire x1="25.4" y1="228.6" x2="20.32" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="+P6" gate="G$1" pin="VDD_3V3"/>
+<wire x1="20.32" y1="228.6" x2="20.32" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -6396,13 +6399,6 @@ Float to enable</text>
 <pinref part="CON7" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="335.28" y1="129.54" x2="335.28" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CAN1_STBY" class="0">
-<segment>
-<pinref part="IC6" gate="G$1" pin="STBY"/>
-<wire x1="314.96" y1="76.2" x2="320.04" y2="76.2" width="0.1524" layer="91"/>
-<label x="320.04" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">
