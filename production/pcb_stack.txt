@@ -1,0 +1,4 @@
+PCB layers 		2
+PCB thickness 		1.6mm
+soldermask color	RED AS HELL
+Copper thickness 	1 oz
