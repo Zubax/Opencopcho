@@ -3,7 +3,7 @@
 <eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -781,6 +781,11 @@
 <smd name="2" x="0.85" y="0" dx="1.5" dy="1.5" layer="1"/>
 <text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="FIDUCIA-MOUNT">
+<circle x="0" y="0" radius="0.5" width="2.1844" layer="29"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
 </package>
 </packages>
 </library>
@@ -4108,8 +4113,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="BASIC"/>
-<variantdef name="A"/>
+<variantdef name="basic" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -4313,13 +4317,13 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 </pass>
 </autorouter>
 <elements>
-<element name="IC1" library="dc-dc" library_urn="urn:adsk.eagle:library:3736309" package="MSOP10" package3d_urn="urn:adsk.eagle:package:3736316/2" value="TPS54260" x="-10.925" y="30.65" smashed="yes">
+<element name="IC1" library="dc-dc" library_urn="urn:adsk.eagle:library:3736309" package="MSOP10" package3d_urn="urn:adsk.eagle:package:3736316/2" value="TPS54260" x="-10.925" y="30.65" populate="no" smashed="yes">
 <attribute name="DIGIKEY#" value="296-39415-2-ND" x="-36.325" y="61.9" size="1.778" layer="27" display="off"/>
 <attribute name="MANF" value="Texas Instruments" x="-36.325" y="61.9" size="1.778" layer="27" display="off"/>
 <attribute name="MANF#" value="TPS54260DGQR" x="-36.325" y="61.9" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-10.925" y="30.65" size="0.6" layer="25" font="vector" ratio="15" align="center"/>
 </element>
-<element name="C8" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C0603" package3d_urn="urn:adsk.eagle:package:2539381/2" value="0.1µF" x="-10.925" y="32.95" smashed="yes">
+<element name="C8" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C0603" package3d_urn="urn:adsk.eagle:package:2539381/2" value="0.1µF" x="-10.925" y="32.95" populate="no" smashed="yes">
 <attribute name="DIGIKEY#" value="490-1532-1-ND" x="-40.425" y="80" size="1.778" layer="27" display="off"/>
 <attribute name="MANF" value="Murata Electronics North America" x="-40.425" y="80" size="1.778" layer="27" display="off"/>
 <attribute name="MANF#" value="GRM188R71C104KA01D" x="-40.425" y="80" size="1.778" layer="27" display="off"/>
@@ -4331,7 +4335,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="VALUE" x="-10.925" y="33.85" size="0.5" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="VOLTAGE" value="16V" x="-40.425" y="80" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C10" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" value="4.7µF" x="-16.15" y="34.95" smashed="yes">
+<element name="C10" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" value="4.7µF" x="-16.15" y="34.95" populate="no" smashed="yes">
 <attribute name="DIGIKEY#" value="445-6043-1-ND" x="-35.4" y="68.3" size="1.778" layer="27" display="off"/>
 <attribute name="MANF" value="TDK Corporation" x="-35.4" y="68.3" size="1.778" layer="27" display="off"/>
 <attribute name="MANF#" value="C3225X7S2A475M200AB" x="-35.4" y="68.3" size="1.778" layer="27" display="off"/>
@@ -4343,7 +4347,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="VALUE" x="-16.15" y="36.855" size="0.6" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="VOLTAGE" value="100V" x="-35.4" y="68.3" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C11" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" value="4.7µF" x="-16.1" y="31.85" smashed="yes">
+<element name="C11" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" value="4.7µF" x="-16.1" y="31.85" populate="no" smashed="yes">
 <attribute name="DIGIKEY#" value="445-6043-1-ND" x="-35.35" y="65.2" size="1.778" layer="27" display="off"/>
 <attribute name="MANF" value="TDK Corporation" x="-35.35" y="65.2" size="1.778" layer="27" display="off"/>
 <attribute name="MANF#" value="C3225X7S2A475M200AB" x="-35.35" y="65.2" size="1.778" layer="27" display="off"/>
@@ -4355,7 +4359,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="VALUE" x="-16.1" y="33.755" size="0.6" layer="27" font="vector" ratio="15" align="center"/>
 <attribute name="VOLTAGE" value="100V" x="-35.35" y="65.2" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C12" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C0603" package3d_urn="urn:adsk.eagle:package:2539381/2" value="10nF" x="-14.25" y="27.65" smashed="yes" rot="R90">
+<element name="C12" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C0603" package3d_urn="urn:adsk.eagle:package:2539381/2" value="10nF" x="-14.25" y="27.65" populate="no" smashed="yes" rot="R90">
 <attribute name="DIGIKEY#" value="311-1085-1-ND" x="-61.3" y="-15.65" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF" value="YAGEO" x="-61.3" y="-15.65" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF#" value="CC0603KRX7R9BB103" x="-61.3" y="-15.65" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4367,7 +4371,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="VALUE" x="-15.15" y="27.65" size="0.5" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VOLTAGE" value="50V" x="-61.3" y="-15.65" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R5" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0603" package3d_urn="urn:adsk.eagle:package:2539515/2" value="100K" x="-13" y="27.65" smashed="yes" rot="R90">
+<element name="R5" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0603" package3d_urn="urn:adsk.eagle:package:2539515/2" value="100K" x="-13" y="27.65" populate="no" smashed="yes" rot="R90">
 <attribute name="DIGIKEY#" value="311-100KHRCT-ND" x="-60.1" y="-3.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF" value="Yageo" x="-60.1" y="-3.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF#" value="RC0603FR-07100KL" x="-60.1" y="-3.7" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4376,20 +4380,20 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="TOLERANCE" value="1%" x="-60.1" y="-3.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-14" y="27.65" size="0.5" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="L2" library="power_inductors" library_urn="urn:adsk.eagle:library:3345990" package="SRP6540" package3d_urn="urn:adsk.eagle:package:1040153/2" value="22µH" x="-4.175" y="33.225" smashed="yes" rot="R270">
+<element name="L2" library="power_inductors" library_urn="urn:adsk.eagle:library:3345990" package="SRP6540" package3d_urn="urn:adsk.eagle:package:1040153/2" value="22µH" x="-4.175" y="33.225" populate="no" smashed="yes" rot="R270">
 <attribute name="CURRENT_SAT" value="2.5A" x="-4.175" y="33.225" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY#" value="SRP6540-4R7MCT-ND" x="39.875" y="57.775" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANF" value="Bourns Inc" x="39.875" y="57.775" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANF#" value="SRP6540-4R7M" x="39.875" y="57.775" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-4.175" y="33.225" size="1" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="D1" library="Diodes" library_urn="urn:adsk.eagle:library:2473263" package="DO-214AA(SMB)" package3d_urn="urn:adsk.eagle:package:3333651/3" value="B360B" x="-10.5" y="35.7" smashed="yes">
+<element name="D1" library="Diodes" library_urn="urn:adsk.eagle:library:2473263" package="DO-214AA(SMB)" package3d_urn="urn:adsk.eagle:package:3333651/3" value="B360B" x="-10.5" y="35.7" populate="no" smashed="yes">
 <attribute name="DIGIKEY#" value="B360B-FDICT-ND" x="-35.05" y="79.75" size="1.778" layer="27" display="off"/>
 <attribute name="MANF" value="Diodes Incorporated" x="-35.05" y="79.75" size="1.778" layer="27" display="off"/>
 <attribute name="MANF#" value="B360B-13-F" x="-35.05" y="79.75" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-10.5" y="35.7" size="0.7" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="C13" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" value="47µF" x="1.2" y="34.95" smashed="yes" rot="R180">
+<element name="C13" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" value="47µF" x="1.2" y="34.95" populate="no" smashed="yes" rot="R180">
 <attribute name="DIGIKEY#" value="490-3888-1-ND" x="46.75" y="5.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF" value="Murata Electronics North America" x="46.75" y="5.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF#" value="GRM32ER61C476ME15L" x="46.75" y="5.4" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4401,7 +4405,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="VALUE" x="1.2" y="33.045" size="0.6" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VOLTAGE" value="16V" x="46.75" y="5.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C14" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" value="47µF" x="1.2" y="31.85" smashed="yes" rot="R180">
+<element name="C14" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" value="47µF" x="1.2" y="31.85" populate="no" smashed="yes" rot="R180">
 <attribute name="DIGIKEY#" value="490-3888-1-ND" x="55.55" y="2.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF" value="Murata Electronics North America" x="55.55" y="2.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANF#" value="GRM32ER61C476ME15L" x="55.55" y="2.3" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4413,7 +4417,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="VALUE" x="1.2" y="29.945" size="0.6" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VOLTAGE" value="16V" x="55.55" y="2.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R6" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0603" package3d_urn="urn:adsk.eagle:package:2539515/2" value="10K" x="-6.75" y="27.65" smashed="yes" rot="R270">
+<element name="R6" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0603" package3d_urn="urn:adsk.eagle:package:2539515/2" value="10K" x="-6.75" y="27.65" populate="no" smashed="yes" rot="R270">
 <attribute name="DIGIKEY#" value="311-10.0KHRCT-ND" x="36.5" y="82.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANF" value="Yageo" x="36.5" y="82.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANF#" value="RC0603FR-0710KL" x="36.5" y="82.95" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4422,7 +4426,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="TOLERANCE" value="1%" x="36.5" y="82.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-5.75" y="27.65" size="0.5" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C15" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C0603" package3d_urn="urn:adsk.eagle:package:2539381/2" value="4700pF" x="-5.5" y="27.65" smashed="yes" rot="R90">
+<element name="C15" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C0603" package3d_urn="urn:adsk.eagle:package:2539381/2" value="4700pF" x="-5.5" y="27.65" populate="no" smashed="yes" rot="R90">
 <attribute name="DIGIKEY#" value="490-1506-1-ND" x="-48.7" y="-35.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF" value="Murata Electronics North America" x="-48.7" y="-35.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF#" value="GRM188R71H472KA01D" x="-48.7" y="-35.25" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4434,7 +4438,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="VALUE" x="-6.4" y="27.65" size="0.5" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VOLTAGE" value="50V" x="-48.7" y="-35.25" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C16" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C0603" package3d_urn="urn:adsk.eagle:package:2539381/2" value="33pF" x="-9.25" y="27.65" smashed="yes" rot="R270">
+<element name="C16" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" package="C0603" package3d_urn="urn:adsk.eagle:package:2539381/2" value="33pF" x="-9.25" y="27.65" populate="no" smashed="yes" rot="R270">
 <attribute name="DIGIKEY#" value="490-6126-1-ND" x="33.95" y="100.75" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANF" value="Murata Electronics North America" x="33.95" y="100.75" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANF#" value="GRM0335C1H330JA01D" x="33.95" y="100.75" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4446,7 +4450,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="VALUE" x="-8.35" y="27.65" size="0.5" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VOLTAGE" value="50V" x="33.95" y="100.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R7" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0603" package3d_urn="urn:adsk.eagle:package:2539515/2" value="10K" x="-11.75" y="27.65" smashed="yes" rot="R90">
+<element name="R7" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0603" package3d_urn="urn:adsk.eagle:package:2539515/2" value="10K" x="-11.75" y="27.65" populate="no" smashed="yes" rot="R90">
 <attribute name="DIGIKEY#" value="311-10.0KHRCT-ND" x="-55" y="-33.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF" value="Yageo" x="-55" y="-33.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF#" value="RC0603FR-0710KL" x="-55" y="-33.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4455,7 +4459,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="TOLERANCE" value="1%" x="-55" y="-33.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-12.75" y="27.65" size="0.5" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R8" library="rc" library_urn="urn:adsk.eagle:library:2539423" package="R0603" package3d_urn="urn:adsk.eagle:package:2539454/2" value="53.6K 1%" x="-10.5" y="27.65" smashed="yes" rot="R270">
+<element name="R8" library="rc" library_urn="urn:adsk.eagle:library:2539423" package="R0603" package3d_urn="urn:adsk.eagle:package:2539454/2" value="53.6K 1%" x="-10.5" y="27.65" populate="no" smashed="yes" rot="R270">
 <attribute name="DIGIKEY#" value="311-53.6KHRCT-ND" x="32.75" y="86.15" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANF" value="Yageo" x="32.75" y="86.15" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANF#" value="RC0603FR-0753K6L" x="32.75" y="86.15" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4467,7 +4471,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <element name="MODULE2" library="dc-dc" library_urn="urn:adsk.eagle:library:3736309" package="GW1584_MODULE" package3d_urn="urn:adsk.eagle:package:7016789/3" value="GW1584_MODULE" x="-7.45" y="33.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="-7.4" y="38.9" size="1.5" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="R9" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0603" package3d_urn="urn:adsk.eagle:package:2539515/2" value="10K" x="-8" y="27.65" smashed="yes" rot="R90">
+<element name="R9" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0603" package3d_urn="urn:adsk.eagle:package:2539515/2" value="10K" x="-8" y="27.65" populate="no" smashed="yes" rot="R90">
 <attribute name="DIGIKEY#" value="311-10.0KHRCT-ND" x="-17.95" y="-44.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF" value="Yageo" x="-17.95" y="-44.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANF#" value="RC0603FR-0710KL" x="-17.95" y="-44.05" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4604,7 +4608,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="VALUE" x="18.85" y="28.75" size="0.5" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VOLTAGE" value="16V" x="17.95" y="28.75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="SJ3" library="usb2can_master_lib" package="RES_0" value="" x="5.54" y="29.35" smashed="yes">
+<element name="SJ3" library="usb2can_master_lib" package="RES_0" value="" x="5.54" y="29.35" populate="no" smashed="yes">
 <attribute name="NAME" x="3.955" y="27.17" size="1.27" layer="25"/>
 <attribute name="VALUE" x="4.905" y="26.81" size="1.27" layer="27"/>
 </element>
@@ -4716,6 +4720,10 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 </element>
 <element name="U$1" library="pixhawk_esc_1.5_master_lib" package="ZUBAX_LOGO_5X10" value="" x="-19.65" y="28.85" smashed="yes" rot="R90"/>
 <element name="U$4" library="logo" library_urn="urn:adsk.eagle:library:6668987" package="OSHW-10.5X11.5" value="" x="-1.675" y="28.775" smashed="yes" rot="MR0"/>
+<element name="U$5" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="-24" y="41" populate="no" smashed="yes"/>
+<element name="U$11" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="16.3" y="-43.45" populate="no" smashed="yes"/>
+<element name="U$6" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="23.4" y="38.7" populate="no" smashed="yes"/>
+<element name="U$7" library="usb2can_master_lib" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="-16.55" y="-43.6" populate="no" smashed="yes"/>
 </elements>
 <signals>
 <signal name="AA1">
@@ -4853,6 +4861,50 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <via x="-9.05" y="21.8" extent="1-16" drill="0.5" diameter="1"/>
 <via x="-11.35" y="21.85" extent="1-16" drill="0.5" diameter="1"/>
 <via x="8.45" y="34.8" extent="1-16" drill="0.5" diameter="1"/>
+<via x="12.65" y="-43.1" extent="1-16" drill="0.5" diameter="1"/>
+<via x="18.4" y="-40.15" extent="1-16" drill="0.5" diameter="1"/>
+<via x="17.55" y="-38.5" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-7" y="-36.1" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-12.7" y="-35.8" extent="1-16" drill="0.5" diameter="1"/>
+<via x="18.85" y="-32.25" extent="1-16" drill="0.5" diameter="1"/>
+<via x="20.4" y="-38.5" extent="1-16" drill="0.5" diameter="1"/>
+<via x="14.1" y="-22.2" extent="1-16" drill="0.5" diameter="1"/>
+<via x="20.1" y="-17.4" extent="1-16" drill="0.5" diameter="1"/>
+<via x="16.9" y="-9.8" extent="1-16" drill="0.5" diameter="1"/>
+<via x="19.45" y="-2.2" extent="1-16" drill="0.5" diameter="1"/>
+<via x="14.55" y="3.85" extent="1-16" drill="0.5" diameter="1"/>
+<via x="6.15" y="-8.7" extent="1-16" drill="0.5" diameter="1"/>
+<via x="6.95" y="-4.7" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-2.6" y="-8.8" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-3.85" y="-5.45" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-9.85" y="-5.3" extent="1-16" drill="0.5" diameter="1"/>
+<via x="2.1" y="2.65" extent="1-16" drill="0.5" diameter="1"/>
+<via x="7.5" y="1.6" extent="1-16" drill="0.5" diameter="1"/>
+<via x="0.8" y="6.25" extent="1-16" drill="0.5" diameter="1"/>
+<via x="10.5" y="9" extent="1-16" drill="0.5" diameter="1"/>
+<via x="4.7" y="9.2" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-0.75" y="14.7" extent="1-16" drill="0.5" diameter="1"/>
+<via x="3.1" y="15" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-1.55" y="17.95" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-3.95" y="15.2" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-9.05" y="14.35" extent="1-16" drill="0.5" diameter="1"/>
+<via x="19.65" y="28.75" extent="1-16" drill="0.5" diameter="1"/>
+<via x="14.4" y="21.35" extent="1-16" drill="0.5" diameter="1"/>
+<via x="12.9" y="11.55" extent="1-16" drill="0.5" diameter="1"/>
+<via x="19.65" y="19.5" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-20.25" y="-12.05" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-18" y="-28.4" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-20.45" y="-38.6" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-18.7" y="-35.9" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-20.15" y="-24.75" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-17.5" y="-15.7" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-15.55" y="-22" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-17.15" y="18.2" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-19.8" y="17.1" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-19.85" y="14.7" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-15.9" y="14.6" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-20.1" y="21.55" extent="1-16" drill="0.5" diameter="1"/>
+<via x="-19.45" y="41" extent="1-16" drill="0.5" diameter="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="IC1" pad="8"/>
@@ -5543,12 +5595,12 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <signal name="PD0/FDCAN2_RX">
 <contactref element="CON18" pad="25"/>
 <contactref element="IC2" pad="4"/>
-<wire x1="-24.12" y1="-28.55" x2="-22.87" y2="-27.3" width="0.2" layer="1"/>
-<wire x1="-22.87" y1="-27.3" x2="-19.9" y2="-27.3" width="0.2" layer="1"/>
-<wire x1="-19.9" y1="-27.3" x2="-19.1" y2="-26.5" width="0.2" layer="1"/>
+<wire x1="-24.12" y1="-28.55" x2="-22.97" y2="-27.4" width="0.2" layer="1"/>
+<wire x1="-22.97" y1="-27.4" x2="-19.7" y2="-27.4" width="0.2" layer="1"/>
+<wire x1="-19.7" y1="-27.4" x2="-19.1" y2="-26.8" width="0.2" layer="1"/>
 <wire x1="-8.05" y1="17.05" x2="-9.15" y2="15.95" width="0.2" layer="1"/>
 <via x="-8.05" y="17.05" extent="1-16" drill="0.5" diameter="1"/>
-<wire x1="-19.1" y1="-26.5" x2="-19.1" y2="13.7" width="0.2" layer="1"/>
+<wire x1="-19.1" y1="-26.8" x2="-19.1" y2="13.7" width="0.2" layer="1"/>
 <wire x1="-19.1" y1="13.7" x2="-16.85" y2="15.95" width="0.2" layer="1"/>
 <wire x1="-16.85" y1="15.95" x2="-9.15" y2="15.95" width="0.2" layer="1"/>
 <wire x1="4.2" y1="16.6" x2="-7.6" y2="16.6" width="0.2" layer="16"/>
