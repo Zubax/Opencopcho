@@ -5485,7 +5485,7 @@ http://ru.aliexpress.com/item/New-Mini-Converter-Adjustable-DC-DC-Step-down-Powe
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="basic" current="yes"/>
+<variantdef name="basic"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -5649,6 +5649,18 @@ http://ru.aliexpress.com/item/New-Mini-Converter-Adjustable-DC-DC-Step-down-Powe
 <part name="U$7" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
 <variant name="basic" populate="no"/>
 </part>
+<part name="R11" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-1206" package3d_urn="urn:adsk.eagle:package:2539464/2" technology="-5%">
+<variant name="basic" populate="no"/>
+</part>
+<part name="R12" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-1206" package3d_urn="urn:adsk.eagle:package:2539464/2" technology="-5%">
+<variant name="basic" populate="no"/>
+</part>
+<part name="GND7" library="esp8266_master_lib" deviceset="GND" device=""/>
+<part name="GND31" library="esp8266_master_lib" deviceset="GND" device=""/>
+<part name="SJ1" library="usb2can_master_lib" deviceset="SOLDER_JOINT" device="">
+<variant name="basic" populate="no"/>
+</part>
+<part name="SJ2" library="usb2can_master_lib" deviceset="SOLDER_JOINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6071,6 +6083,30 @@ Float to enable</text>
 <instance part="U$11" gate="G$1" x="12.7" y="10.16" smashed="yes" rot="R270"/>
 <instance part="U$6" gate="G$1" x="22.86" y="20.32" smashed="yes" rot="R270"/>
 <instance part="U$7" gate="G$1" x="22.86" y="10.16" smashed="yes" rot="R270"/>
+<instance part="R11" gate="G$1" x="238.76" y="233.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="238.76" y="233.68" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="240.792" y="233.426" size="0.762" layer="96" rot="R90" align="bottom-right"/>
+<attribute name="PACKAGE" x="238.252" y="229.87" size="0.508" layer="95" rot="R90" align="center"/>
+<attribute name="TOLERANCE" x="240.792" y="233.934" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="R12" gate="G$1" x="236.22" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="236.22" y="167.64" size="1.27" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="238.252" y="167.386" size="0.762" layer="96" rot="R90" align="bottom-right"/>
+<attribute name="PACKAGE" x="235.712" y="163.83" size="0.508" layer="95" rot="R90" align="center"/>
+<attribute name="TOLERANCE" x="238.252" y="167.894" size="0.762" layer="96" rot="R90"/>
+</instance>
+<instance part="GND7" gate="1" x="246.38" y="238.76" smashed="yes">
+<attribute name="VALUE" x="246.38" y="237.49" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="GND31" gate="1" x="228.6" y="167.64" smashed="yes">
+<attribute name="VALUE" x="228.6" y="166.37" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="SJ1" gate="G$1" x="233.68" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="233.68" y="167.64" size="1.524" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
+</instance>
+<instance part="SJ2" gate="G$1" x="241.3" y="233.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="241.3" y="233.68" size="1.524" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6339,6 +6375,31 @@ Float to enable</text>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="15.24" y1="218.44" x2="15.24" y2="220.98" width="0.1524" layer="91"/>
 <junction x="15.24" y="220.98"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="246.38" y1="241.3" x2="246.38" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="243.84" x2="243.84" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="243.84" x2="241.3" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="243.84" x2="238.76" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="243.84" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="241.3" x2="238.76" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="238.76" x2="241.3" y2="243.84" width="0.1524" layer="91"/>
+<junction x="241.3" y="243.84"/>
+</segment>
+<segment>
+<pinref part="GND31" gate="1" pin="GND"/>
+<wire x1="228.6" y1="170.18" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="172.72" x2="228.6" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="175.26" x2="233.68" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="175.26" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="175.26" x2="236.22" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="172.72" x2="233.68" y2="175.26" width="0.1524" layer="91"/>
+<junction x="233.68" y="175.26"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -6660,13 +6721,19 @@ Float to enable</text>
 <net name="CAN1_SHIELD" class="0">
 <segment>
 <pinref part="CON2" gate="G$1" pin="5"/>
-<wire x1="248.92" y1="226.06" x2="238.76" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="226.06" x2="241.3" y2="226.06" width="0.1524" layer="91"/>
 <label x="228.6" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON1" gate="G$1" pin="5"/>
+<wire x1="241.3" y1="226.06" x2="238.76" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="226.06" x2="228.6" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="193.04" x2="238.76" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="193.04" x2="238.76" y2="226.06" width="0.1524" layer="91"/>
 <junction x="238.76" y="226.06"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="226.06" x2="238.76" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="228.6" x2="241.3" y2="226.06" width="0.1524" layer="91"/>
+<junction x="241.3" y="226.06"/>
 </segment>
 <segment>
 <pinref part="CON15" gate="G$1" pin="2"/>
@@ -6837,10 +6904,16 @@ Float to enable</text>
 <wire x1="248.92" y1="160.02" x2="236.22" y2="160.02" width="0.1524" layer="91"/>
 <label x="231.14" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="CON4" gate="G$1" pin="5"/>
-<wire x1="236.22" y1="160.02" x2="231.14" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="160.02" x2="233.68" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="160.02" x2="231.14" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="127" x2="236.22" y2="127" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="127" x2="236.22" y2="160.02" width="0.1524" layer="91"/>
 <junction x="236.22" y="160.02"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="160.02" x2="236.22" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="162.56" x2="233.68" y2="160.02" width="0.1524" layer="91"/>
+<junction x="233.68" y="160.02"/>
 </segment>
 </net>
 <net name="N$2" class="0">
