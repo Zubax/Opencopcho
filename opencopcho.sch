@@ -5143,6 +5143,11 @@ DIN A3, landscape with location and doc. field</description>
 <text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="FIDUCIA-MOUNT">
+<circle x="0" y="0" radius="0.5" width="2.1844" layer="29"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RES_0">
@@ -5154,6 +5159,9 @@ DIN A3, landscape with location and doc. field</description>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="0.254" y="-1.524" size="0.508" layer="97" font="vector" ratio="15" align="center">solder joint</text>
+</symbol>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5167,6 +5175,18 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIALMOUNT">
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIA-MOUNT">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5465,53 +5485,81 @@ http://ru.aliexpress.com/item/New-Mini-Converter-Adjustable-DC-DC-Step-down-Powe
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="BASIC"/>
-<variantdef name="A"/>
+<variantdef name="basic" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
 <parts>
-<part name="IC1" library="dc-dc" library_urn="urn:adsk.eagle:library:3736309" deviceset="TPS54260" device="" package3d_urn="urn:adsk.eagle:package:3736316/2"/>
-<part name="C8" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-16V_10%_X7R" value="0.1µF"/>
-<part name="C10" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="4.7µF" device="-1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-100V_20%_X7S" value="4.7µF"/>
-<part name="C11" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="4.7µF" device="-1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-100V_20%_X7S" value="4.7µF"/>
-<part name="C12" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10NF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-50V_10%_X7R" value="10nF"/>
-<part name="R5" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="100K" device="-0603" package3d_urn="urn:adsk.eagle:package:2539515/2" technology="-1%" value="100K"/>
+<part name="IC1" library="dc-dc" library_urn="urn:adsk.eagle:library:3736309" deviceset="TPS54260" device="" package3d_urn="urn:adsk.eagle:package:3736316/2">
+<variant name="basic" populate="no"/>
+</part>
+<part name="C8" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-16V_10%_X7R" value="0.1µF">
+<variant name="basic" populate="no"/>
+</part>
+<part name="C10" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="4.7µF" device="-1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-100V_20%_X7S" value="4.7µF">
+<variant name="basic" populate="no"/>
+</part>
+<part name="C11" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="4.7µF" device="-1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-100V_20%_X7S" value="4.7µF">
+<variant name="basic" populate="no"/>
+</part>
+<part name="C12" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10NF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-50V_10%_X7R" value="10nF">
+<variant name="basic" populate="no"/>
+</part>
+<part name="R5" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="100K" device="-0603" package3d_urn="urn:adsk.eagle:package:2539515/2" technology="-1%" value="100K">
+<variant name="basic" populate="no"/>
+</part>
 <part name="GND2" library="esp8266_master_lib" deviceset="GND" device=""/>
 <part name="GND5" library="esp8266_master_lib" deviceset="GND" device=""/>
 <part name="L2" library="power_inductors" library_urn="urn:adsk.eagle:library:3345990" deviceset="22µH" device="-SRP6540" package3d_urn="urn:adsk.eagle:package:1040153/2" technology="-22U" value="22µH">
 <attribute name="DIGIKEY#" value="SRP6540-4R7MCT-ND"/>
 <attribute name="MANF" value="Bourns Inc"/>
 <attribute name="MANF#" value="SRP6540-4R7M"/>
+<variant name="basic" populate="no"/>
 </part>
 <part name="D1" library="Diodes" library_urn="urn:adsk.eagle:library:2473263" deviceset="B360B" device="" package3d_urn="urn:adsk.eagle:package:3333651/3">
 <attribute name="DIGIKEY#" value="B360B-FDICT-ND"/>
 <attribute name="MANF" value="Diodes Incorporated"/>
 <attribute name="MANF#" value="B360B-13-F"/>
+<variant name="basic" populate="no"/>
 </part>
-<part name="C13" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="47µF" device="-1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-16V_20%_X5R" value="47µF"/>
-<part name="C14" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="47µF" device="-1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-16V_20%_X5R" value="47µF"/>
+<part name="C13" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="47µF" device="-1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-16V_20%_X5R" value="47µF">
+<variant name="basic" populate="no"/>
+</part>
+<part name="C14" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="47µF" device="-1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-16V_20%_X5R" value="47µF">
+<variant name="basic" populate="no"/>
+</part>
 <part name="GND6" library="esp8266_master_lib" deviceset="GND" device=""/>
 <part name="GND10" library="esp8266_master_lib" deviceset="GND" device=""/>
 <part name="GND12" library="esp8266_master_lib" deviceset="GND" device=""/>
-<part name="R6" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0603" package3d_urn="urn:adsk.eagle:package:2539515/2" technology="-1%" value="10K"/>
-<part name="C15" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="4700PF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-50V_10%_X7R" value="4700pF"/>
+<part name="R6" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0603" package3d_urn="urn:adsk.eagle:package:2539515/2" technology="-1%" value="10K">
+<variant name="basic" populate="no"/>
+</part>
+<part name="C15" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="4700PF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-50V_10%_X7R" value="4700pF">
+<variant name="basic" populate="no"/>
+</part>
 <part name="GND13" library="esp8266_master_lib" deviceset="GND" device=""/>
-<part name="C16" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="33PF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-50V_5%_NP0" value="33pF"/>
-<part name="R7" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0603" package3d_urn="urn:adsk.eagle:package:2539515/2" technology="-1%" value="10K"/>
+<part name="C16" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="33PF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-50V_5%_NP0" value="33pF">
+<variant name="basic" populate="no"/>
+</part>
+<part name="R7" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0603" package3d_urn="urn:adsk.eagle:package:2539515/2" technology="-1%" value="10K">
+<variant name="basic" populate="no"/>
+</part>
 <part name="R8" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0603" package3d_urn="urn:adsk.eagle:package:2539454/2" technology="-1%" value="53.6K 1%">
 <attribute name="DIGIKEY#" value="311-53.6KHRCT-ND"/>
 <attribute name="MANF" value="Yageo"/>
 <attribute name="MANF#" value="RC0603FR-0753K6L"/>
+<variant name="basic" populate="no"/>
 </part>
 <part name="GND14" library="esp8266_master_lib" deviceset="GND" device=""/>
 <part name="+P2" library="supply_symbols" deviceset="5V" device=""/>
 <part name="MODULE2" library="dc-dc" library_urn="urn:adsk.eagle:library:3736309" deviceset="GW1584_MODULE" device="" package3d_urn="urn:adsk.eagle:package:7016789/3"/>
 <part name="GND15" library="supply_symbols" deviceset="GND" device="" value="GND"/>
 <part name="GND16" library="supply_symbols" deviceset="GND" device="" value="GND"/>
-<part name="R9" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0603" package3d_urn="urn:adsk.eagle:package:2539515/2" technology="-1%" value="10K"/>
+<part name="R9" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0603" package3d_urn="urn:adsk.eagle:package:2539515/2" technology="-1%" value="10K">
+<variant name="basic" populate="no"/>
+</part>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="IC6" library="serial_interfaces" library_urn="urn:adsk.eagle:library:4770999" deviceset="MCP2542WFD" device="" package3d_urn="urn:adsk.eagle:package:4771009/3"/>
 <part name="+P26" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="3.3V" device=""/>
@@ -5544,7 +5592,9 @@ http://ru.aliexpress.com/item/New-Mini-Converter-Adjustable-DC-DC-Step-down-Powe
 <part name="GND1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="C2" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-16V_10%_X7R" value="0.1µF"/>
 <part name="GND11" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
-<part name="SJ3" library="usb2can_master_lib" deviceset="SOLDER_JOINT" device=""/>
+<part name="SJ3" library="usb2can_master_lib" deviceset="SOLDER_JOINT" device="">
+<variant name="basic" populate="no"/>
+</part>
 <part name="D5" library="Diodes" library_urn="urn:adsk.eagle:library:2473263" deviceset="PMEG4020" device="" package3d_urn="urn:adsk.eagle:package:2473270/2"/>
 <part name="D6" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="SMBJ24CA" device="-SMB" package3d_urn="urn:adsk.eagle:package:3333651/3"/>
 <part name="R3" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0805" package3d_urn="urn:adsk.eagle:package:2539455/2" technology="-5%" value="10R"/>
@@ -5587,6 +5637,18 @@ http://ru.aliexpress.com/item/New-Mini-Converter-Adjustable-DC-DC-Step-down-Powe
 <part name="+P7" library="supply_symbols" deviceset="5V" device=""/>
 <part name="GND30" library="supply_symbols" deviceset="GND" device="" value="GND"/>
 <part name="+P6" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="3.3V" device=""/>
+<part name="U$5" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="basic" populate="no"/>
+</part>
+<part name="U$11" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="basic" populate="no"/>
+</part>
+<part name="U$6" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="basic" populate="no"/>
+</part>
+<part name="U$7" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="basic" populate="no"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -5773,14 +5835,14 @@ Float to enable</text>
 <instance part="CON13" gate="G$1" x="370.84" y="55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="377.19" y="49.53" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
-<instance part="R40" gate="G$1" x="335.28" y="63.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="335.28" y="63.5" size="1.27" layer="95" rot="R270" align="center"/>
-<attribute name="VALUE" x="333.248" y="63.754" size="0.762" layer="96" rot="R270" align="bottom-right"/>
-<attribute name="PACKAGE" x="335.788" y="67.31" size="0.508" layer="95" rot="R270" align="center"/>
-<attribute name="TOLERANCE" x="333.248" y="63.246" size="0.762" layer="96" rot="R270"/>
+<instance part="R40" gate="G$1" x="330.2" y="63.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="330.2" y="63.5" size="1.27" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="328.168" y="63.754" size="0.762" layer="96" rot="R270" align="bottom-right"/>
+<attribute name="PACKAGE" x="330.708" y="67.31" size="0.508" layer="95" rot="R270" align="center"/>
+<attribute name="TOLERANCE" x="328.168" y="63.246" size="0.762" layer="96" rot="R270"/>
 </instance>
-<instance part="CON14" gate="G$1" x="340.36" y="48.26" smashed="yes" rot="R90">
-<attribute name="NAME" x="331.47" y="50.8" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
+<instance part="CON14" gate="G$1" x="335.28" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="326.39" y="50.8" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
 <instance part="D21" gate="G$1" x="342.9" y="53.34" smashed="yes">
 <attribute name="NAME" x="347.98" y="66.802" size="1.27" layer="95" font="vector" align="center"/>
@@ -5824,14 +5886,14 @@ Float to enable</text>
 <instance part="CON6" gate="G$1" x="370.84" y="129.54" smashed="yes" rot="R270">
 <attribute name="NAME" x="377.19" y="123.19" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
-<instance part="R2" gate="G$1" x="335.28" y="137.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="335.28" y="137.16" size="1.27" layer="95" rot="R270" align="center"/>
-<attribute name="VALUE" x="333.248" y="137.414" size="0.762" layer="96" rot="R270" align="bottom-right"/>
-<attribute name="PACKAGE" x="335.788" y="140.97" size="0.508" layer="95" rot="R270" align="center"/>
-<attribute name="TOLERANCE" x="333.248" y="136.906" size="0.762" layer="96" rot="R270"/>
+<instance part="R2" gate="G$1" x="330.2" y="137.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="330.2" y="137.16" size="1.27" layer="95" rot="R270" align="center"/>
+<attribute name="VALUE" x="328.168" y="137.414" size="0.762" layer="96" rot="R270" align="bottom-right"/>
+<attribute name="PACKAGE" x="330.708" y="140.97" size="0.508" layer="95" rot="R270" align="center"/>
+<attribute name="TOLERANCE" x="328.168" y="136.906" size="0.762" layer="96" rot="R270"/>
 </instance>
-<instance part="CON7" gate="G$1" x="340.36" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="331.47" y="124.46" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
+<instance part="CON7" gate="G$1" x="335.28" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="326.39" y="124.46" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
 <instance part="D2" gate="G$1" x="342.9" y="127" smashed="yes">
 <attribute name="NAME" x="347.98" y="140.462" size="1.27" layer="95" font="vector" align="center"/>
@@ -6005,6 +6067,10 @@ Float to enable</text>
 <instance part="+P6" gate="G$1" x="20.32" y="233.68" smashed="yes">
 <attribute name="VALUE" x="20.32" y="237.236" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
+<instance part="U$5" gate="G$1" x="12.7" y="20.32" smashed="yes" rot="R270"/>
+<instance part="U$11" gate="G$1" x="12.7" y="10.16" smashed="yes" rot="R270"/>
+<instance part="U$6" gate="G$1" x="22.86" y="20.32" smashed="yes" rot="R270"/>
+<instance part="U$7" gate="G$1" x="22.86" y="10.16" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6333,9 +6399,9 @@ Float to enable</text>
 <wire x1="287.02" y1="88.9" x2="284.48" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="88.9" x2="287.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="73.66" x2="287.02" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="88.9" x2="340.36" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="88.9" x2="335.28" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="D8" gate="G$1" pin="C"/>
-<wire x1="340.36" y1="88.9" x2="347.98" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="88.9" x2="347.98" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VCC"/>
@@ -6391,14 +6457,14 @@ Float to enable</text>
 <segment>
 <pinref part="CON14" gate="G$1" pin="2"/>
 <pinref part="R40" gate="G$1" pin="2"/>
-<wire x1="335.28" y1="55.88" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="55.88" x2="330.2" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="CON7" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="335.28" y1="129.54" x2="335.28" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="129.54" x2="330.2" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -6523,14 +6589,14 @@ Float to enable</text>
 <wire x1="360.68" y1="121.92" x2="368.3" y2="121.92" width="0.1524" layer="91"/>
 <label x="355.6" y="144.78" size="1.27" layer="95" font="vector"/>
 <pinref part="IC2" gate="G$1" pin="CANL"/>
-<wire x1="314.96" y1="144.78" x2="337.82" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="144.78" x2="345.44" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="144.78" x2="332.74" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="144.78" x2="345.44" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="144.78" x2="358.14" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="144.78" x2="360.68" y2="144.78" width="0.1524" layer="91"/>
 <junction x="360.68" y="144.78"/>
 <pinref part="CON7" gate="G$1" pin="1"/>
-<wire x1="337.82" y1="129.54" x2="337.82" y2="144.78" width="0.1524" layer="91"/>
-<junction x="337.82" y="144.78"/>
+<wire x1="332.74" y1="129.54" x2="332.74" y2="144.78" width="0.1524" layer="91"/>
+<junction x="332.74" y="144.78"/>
 <pinref part="D2" gate="G$1" pin="C2"/>
 <wire x1="345.44" y1="142.24" x2="345.44" y2="144.78" width="0.1524" layer="91"/>
 <junction x="345.44" y="144.78"/>
@@ -6566,14 +6632,14 @@ Float to enable</text>
 <wire x1="363.22" y1="124.46" x2="368.3" y2="124.46" width="0.1524" layer="91"/>
 <label x="355.6" y="147.32" size="1.27" layer="95" font="vector"/>
 <pinref part="IC2" gate="G$1" pin="CANH"/>
-<wire x1="314.96" y1="147.32" x2="335.28" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="147.32" x2="350.52" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="147.32" x2="330.2" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="147.32" x2="350.52" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="147.32" x2="358.14" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="147.32" x2="363.22" y2="147.32" width="0.1524" layer="91"/>
 <junction x="363.22" y="147.32"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="335.28" y1="142.24" x2="335.28" y2="147.32" width="0.1524" layer="91"/>
-<junction x="335.28" y="147.32"/>
+<wire x1="330.2" y1="142.24" x2="330.2" y2="147.32" width="0.1524" layer="91"/>
+<junction x="330.2" y="147.32"/>
 <pinref part="D2" gate="G$1" pin="C3"/>
 <wire x1="350.52" y1="142.24" x2="350.52" y2="147.32" width="0.1524" layer="91"/>
 <junction x="350.52" y="147.32"/>
@@ -6686,14 +6752,14 @@ Float to enable</text>
 <wire x1="360.68" y1="48.26" x2="368.3" y2="48.26" width="0.1524" layer="91"/>
 <label x="355.6" y="71.12" size="1.27" layer="95" font="vector"/>
 <pinref part="IC6" gate="G$1" pin="CANL"/>
-<wire x1="314.96" y1="71.12" x2="337.82" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="71.12" x2="345.44" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="71.12" x2="332.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="71.12" x2="345.44" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="71.12" x2="358.14" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="71.12" x2="360.68" y2="71.12" width="0.1524" layer="91"/>
 <junction x="360.68" y="71.12"/>
 <pinref part="CON14" gate="G$1" pin="1"/>
-<wire x1="337.82" y1="55.88" x2="337.82" y2="71.12" width="0.1524" layer="91"/>
-<junction x="337.82" y="71.12"/>
+<wire x1="332.74" y1="55.88" x2="332.74" y2="71.12" width="0.1524" layer="91"/>
+<junction x="332.74" y="71.12"/>
 <pinref part="D21" gate="G$1" pin="C2"/>
 <wire x1="345.44" y1="68.58" x2="345.44" y2="71.12" width="0.1524" layer="91"/>
 <junction x="345.44" y="71.12"/>
@@ -6729,14 +6795,14 @@ Float to enable</text>
 <wire x1="363.22" y1="50.8" x2="368.3" y2="50.8" width="0.1524" layer="91"/>
 <label x="355.6" y="73.66" size="1.27" layer="95" font="vector"/>
 <pinref part="IC6" gate="G$1" pin="CANH"/>
-<wire x1="314.96" y1="73.66" x2="335.28" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="73.66" x2="350.52" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="73.66" x2="330.2" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="73.66" x2="350.52" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="73.66" x2="358.14" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="73.66" x2="363.22" y2="73.66" width="0.1524" layer="91"/>
 <junction x="363.22" y="73.66"/>
 <pinref part="R40" gate="G$1" pin="1"/>
-<wire x1="335.28" y1="68.58" x2="335.28" y2="73.66" width="0.1524" layer="91"/>
-<junction x="335.28" y="73.66"/>
+<wire x1="330.2" y1="68.58" x2="330.2" y2="73.66" width="0.1524" layer="91"/>
+<junction x="330.2" y="73.66"/>
 <pinref part="D21" gate="G$1" pin="C3"/>
 <wire x1="350.52" y1="68.58" x2="350.52" y2="73.66" width="0.1524" layer="91"/>
 <junction x="350.52" y="73.66"/>
