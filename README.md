@@ -23,13 +23,10 @@ The full configuration provides three types of connectors defined by the UAVCAN 
 The micro configuration has only the UAVCAN Micro connectors populated.
 In this configuration, Opencopcho can be used with other shields stacked on top of it.
 
-Full configuration               | Micro configuration
----------------------------------|------------------------------------------
-<img src="top.jpg" height="300"> | <img src="top-micro.jpg" height="300">
-
-Bottom view:
-
-<img src="bottom.jpg" height="300">
+Full configuration                  | Micro configuration
+------------------------------------|------------------------------------------
+<img src="top.jpg" width="300">     | <img src="top-micro.jpg" width="300">
+<img src="bottom.jpg" width="300">  |
 
 A 3D render is available here: <https://a360.co/2R1n94m>.
 
