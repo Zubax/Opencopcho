@@ -25,15 +25,15 @@ In this configuration, Opencopcho can be used with other shields stacked on top 
 
 Full configuration:
 
-![top view](top.jpg)
+<img src="top.jpg" height="400">
 
 Micro configuration:
 
-![top view with micro connectors only](top-micro.jpg)
+<img src="top-micro.jpg" height="400">
 
 Bottom view:
 
-![bottom view](bottom.jpg)
+<img src="bottom.jpg" height="400">
 
 A 3D render is available here: <https://a360.co/2R1n94m>.
 
